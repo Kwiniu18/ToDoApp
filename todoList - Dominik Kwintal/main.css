@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #384454;
+}
+
+
+
+
+
+/* TASKS */
+
+
+.task{
+    float: left;
+    position: relative;
+    border-radius: 20px;
+    background: #101826;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    box-shadow: 2px 2px 10px #000000;
+    border: 1px solid #101826;
+    
+
+}
+#task-list{
+    width: 65%;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.task-content{
+    height: 250px;
+}
+
+#bin{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    width: 40px;
+    left: 1;
+    right: 30%;
+}
+
+#star{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 30%;
+    right: 1;
+}
+
+#star:hover{
+    cursor: pointer;
+}
+
+
+#bin:hover{
+    cursor: pointer;
+}
+
+
+
+/* ***** */
+
+
+
+
+
+
+/* MAIN MENU */
+
+.menu-container{
+    width: 60%; 
+    margin: auto;
+}
+
+.menu{
+    width: 80%;
+    background: #101826;
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 10px #000000;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+}
+
+/* ********* */
+
+
+
+/* DATE */
+.date{
+    float: left;
+    background: -webkit-linear-gradient(#f92dcb, #2dd1f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+        
+} 
+
+#month{
+    font-size: 20px;
+}
+
+#day{
+    margin-left: 10px;
+    }
+
+
+/* **** */
+
+
+
+
+
+
+/* TEXT INPUT */
+
+#text-input{
+    width: 60%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: white;
+ }
+
+
+/* ********** */
+
+
+
+
+
+/* ADD BUTTONS */
+
+#add-button{
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: #8c5696;
+    font-size: 30px;
+    margin-left: 20px;
+    
+}
+#new-add-button{
+    border: none;
+    padding: 10px;
+    border-radius:30px ;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: #8c5696;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px #000000;
+}
+#new-add-button:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    
+}
+
+#add-button:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    
+}
+
+
+/* ********** */
+
+/* MEDIA  */
+
+
+@media (max-width: 1216px) {
+    #add-button{
+       display: none;
+       
+    }
+    #task-list{
+        margin-top: 30px;
+    }
+    #new-add-button{
+        display: block;
+    }
+    .menu{
+        margin-bottom: 20px;
+        min-width: 300px;
+    }
+    #text-input{
+        width: 50%;
+    }
+
+    
+}
+@media (max-width: 830px){
+    .menu{
+        width: 100%;
+    }
+}
+@media (max-width: 1020px){
+    #task-list{
+        width: 70%;
+   
+        
+        
+        
+    }
+    .task{
+        width: 26%;
+    }
+}
+@media(max-width:1020px){
+    #bin{
+        right: 20%;
+    }
+    #star{
+        left:20%;
+    }
+}
+@media(max-width: 650px){
+    .menu{
+    margin-right: 30px;
+    }
+    .date{
+        font-size: 30px;
+        margin-top: 25px;
+    }
+}
+@media(max-width: 1000px){
+    .menu-container{
+        width: 90%;
+    }
+    .menu{
+        width: 100%;
+    }
+    #task-list{
+        width: 100%;
+    }
+    .task{
+        font-size: 3.5vw;
+        margin: auto;
+        width: 95%;
+        height: 100px;
+        min-width: 420px;
+    }
+    #bin{
+        right: 1;
+    }
+    #star{
+        right: 1;
+        top:1;
+    }
+
+}
+@media(max-width: 600px){
+    .task{
+        font-size: 5vw;
+    }
+    .menu-container{
+        width: 90%;
+    }
+}
+
+/* ****** */
+

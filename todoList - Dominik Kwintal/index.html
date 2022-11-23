@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List!</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+    <div class="menu-content" >
+
+
+    <div class="menu">
+
+        <input type="text" placeholder="New task . . . " id="text-input" maxlength="18">
+        <div class="date">
+
+          <span id="day">
+            <script>document.write(day)</script>
+          </span>
+          
+          <span id="month">
+            <script>document.write(months[i])</script>
+          </span>
+  
+        </div>
+        <input type="button" value="+" id="add-button" title="ADD TASK" onclick="creatingTasks()">
+
+    </div>
+    <input type="button" value="+" id="new-add-button" title="ADD TASK" onclick="creatingTasks()">
+
+
+
+      
+    </div>
+</div>
+ 
+    <div class="task-list" id="task-list">
+      
+
+    <div class="task" id="task" style="display: none;"> 
+        <br>
+        <div id="bin" onclick="deletingTask()"><img src="bin.png" width="40px" ></div>
+       
+        <div id="star" onclick="makeItFavouritte()"><img src="star.png" width="40px" ></div>
+     
+    
+     </div>
+ 
+
+
+
+     </div>
+     
+    
+
+
+
+
+
+
+
+</body>
+</html>
